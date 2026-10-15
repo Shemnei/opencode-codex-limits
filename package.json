@@ -1,0 +1,33 @@
+{
+  "name": "opencode-codex-limits",
+  "version": "0.1.0",
+  "description": "OpenCode V2 sidebar plugin for ChatGPT Codex usage limits and reset times",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Shemnei/opencode-codex-limits.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test tests",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": ["index.ts", "rpc.ts", "usage.ts", "tui.tsx", "README.md", "LICENSE"],
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.tsx"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.18"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.12",
+    "@opentui/solid": ">=0.5.12",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.3",
+    "typescript": "5.8.2"
+  }
+}
